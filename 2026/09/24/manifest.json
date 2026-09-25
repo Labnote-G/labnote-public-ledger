@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "product": "Labnote",
+  "ledger_date": "2026-09-24",
+  "timezone": "Asia/Shanghai",
+  "generated_at": "2026-09-25T02:15:22Z",
+  "publication_scope": "research_log_version_fingerprints",
+  "privacy_note": "No log titles, bodies, authors, project names, or attachment names are published.",
+  "record_count": 0,
+  "fingerprints_file": "fingerprints.txt",
+  "fingerprints_sha256": "7b81972b87bad3185b10f091dfc28d33b663c7bc5f233d136b2e10aa62ab71e3",
+  "previous_manifest_sha256": null,
+  "records": []
+}
