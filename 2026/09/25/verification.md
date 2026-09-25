@@ -12,8 +12,8 @@ It does not publish log titles, bodies, authors, project names, attachment names
 
 ## Hashes
 
-- `fingerprints.txt`: `46d4f92057d3342d3628c270f359e2f23e7423be874e1ec55758d6e9921f7cec`
-- `manifest.json`: `7c0fb721e7a1fe4b2ef8b60017626609dcbd487c66677496eeca6cb0695c0fb1`
+- `fingerprints.txt`: `af2a5409618433ffc836a7a087ecade2c819622829f705c0715e1f72a369940f`
+- `manifest.json`: `3fd9e9f4e0bcb38d315a683f6758828189fefb8109bae76d16d1edb63fa3bd13`
 
 ## Verification
 
