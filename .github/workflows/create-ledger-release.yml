@@ -1,0 +1,85 @@
+name: Publish ledger release
+
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - "ledger-*"
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Optional ledger tag to publish, for example ledger-2026-09-28"
+        required: false
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out ledger repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Publish releases for ledger tags
+        env:
+          GH_TOKEN: ${{ github.token }}
+          INPUT_TAG: ${{ github.event.inputs.tag }}
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if [[ -n "${INPUT_TAG:-}" ]]; then
+            mapfile -t tags < <(printf '%s\n' "$INPUT_TAG")
+          elif [[ "${GITHUB_REF_TYPE:-}" == "tag" ]]; then
+            mapfile -t tags < <(printf '%s\n' "${GITHUB_REF_NAME}")
+          else
+            mapfile -t tags < <(git tag -l 'ledger-*' --sort=creatordate)
+          fi
+
+          if [[ "${#tags[@]}" -eq 0 ]]; then
+            echo "No ledger tags to publish."
+            exit 0
+          fi
+
+          for tag in "${tags[@]}"; do
+            [[ "$tag" =~ ^ledger-[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]] || {
+              echo "Skip non-ledger tag: $tag"
+              continue
+            }
+
+            date_part="${tag#ledger-}"
+            year="${date_part:0:4}"
+            month="${date_part:5:2}"
+            day="${date_part:8:2}"
+            release_dir="${year}/${month}/${day}"
+            title="Labnote fingerprint ledger ${date_part}"
+
+            for file in fingerprints.txt manifest.json verification.md; do
+              test -f "${release_dir}/${file}" || {
+                echo "Missing ${release_dir}/${file}; cannot publish ${tag}."
+                exit 1
+              }
+            done
+
+            if gh release view "$tag" >/dev/null 2>&1; then
+              echo "Release ${tag} already exists; refreshing assets."
+              gh release upload "$tag" \
+                "${release_dir}/fingerprints.txt" \
+                "${release_dir}/manifest.json" \
+                "${release_dir}/verification.md" \
+                --clobber
+            else
+              echo "Creating release ${tag}."
+              gh release create "$tag" \
+                "${release_dir}/fingerprints.txt" \
+                "${release_dir}/manifest.json" \
+                "${release_dir}/verification.md" \
+                --title "$title" \
+                --notes-file "${release_dir}/verification.md" \
+                --latest=false
+            fi
+          done
