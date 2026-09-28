@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "product": "Labnote",
+  "ledger_date": "2026-09-28",
+  "timezone": "Asia/Shanghai",
+  "generated_at": "2026-09-28T16:00:00Z",
+  "publication_scope": "research_log_latest_fingerprints",
+  "privacy_note": "No log titles, bodies, authors, project names, or attachment names are published.",
+  "record_count": 1,
+  "fingerprints_file": "fingerprints.txt",
+  "fingerprints_sha256": "4ee17bf2ddb00696c5025727edf31a89ad0a6a9dfb077ba77d75595d2b554c93",
+  "previous_manifest_sha256": "53d6fd4f0a1d46f027096ec533215369863df375ad651ffb010f4a5876cd3100",
+  "records": [
+    {
+      "sequence": 1,
+      "fingerprint": "4b0b45eab0641278c5d41db44a41b9b1f01af97edc542c4fbae8fe768174700c",
+      "fingerprinted_at": "2026-09-28T02:28:28Z"
+    }
+  ]
+}
