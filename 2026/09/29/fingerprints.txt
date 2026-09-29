@@ -1,0 +1,7 @@
+# Labnote Daily Fingerprint Publication
+# ledger_date: 2026-09-29
+# timezone: Asia/Shanghai
+# algorithm: SHA-256
+# privacy: this file intentionally omits titles, bodies, authors, project names, and attachment names.
+
+7ad12422bb0bed6170ae6314aa8b6986fb6b398e4cfe74608df1836c9e237fe7
