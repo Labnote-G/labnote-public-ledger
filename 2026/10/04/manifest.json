@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "product": "Labnote",
+  "ledger_date": "2026-10-04",
+  "timezone": "Asia/Shanghai",
+  "generated_at": "2026-10-04T16:00:00Z",
+  "publication_scope": "research_log_latest_fingerprints",
+  "privacy_note": "No log titles, bodies, authors, project names, or attachment names are published.",
+  "record_count": 3,
+  "fingerprints_file": "fingerprints.txt",
+  "fingerprints_sha256": "e0b7db371956eb51894fe4d15984e639683ed70f5e2e147269facb185e978b01",
+  "previous_manifest_sha256": "08986ef3c70c2eb57c0fdde41e9a691d262e919272ee59ab25e5ed719d3eb9ec",
+  "records": [
+    {
+      "sequence": 1,
+      "fingerprint": "15521a905a38e7fa01152a126ffc3df95566742172179da81ae0be7b5674ec3b",
+      "fingerprinted_at": "2026-10-04T07:23:48Z"
+    },
+    {
+      "sequence": 2,
+      "fingerprint": "61e0647d336cf183c4481c6358a4a378f3466a7d1b76d4df8df2c833544c75c4",
+      "fingerprinted_at": "2026-10-04T05:51:35Z"
+    },
+    {
+      "sequence": 3,
+      "fingerprint": "dbf2307226b42cf87889a847e9e29dd65a29dbc087a24e45dd1a6f75103fd5dc",
+      "fingerprinted_at": "2026-10-04T07:43:34Z"
+    }
+  ]
+}
