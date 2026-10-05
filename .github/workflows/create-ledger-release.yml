@@ -37,12 +37,17 @@ jobs:
             mapfile -t tags < <(git tag -l 'ledger-*' 'evidence-v1-*' --sort=creatordate)
           fi
           for tag in "${tags[@]}"; do
+            notes=verification.md
             if [[ "$tag" =~ ^evidence-v1-([0-9]{4})-([0-9]{2})-([0-9]{2})$ ]]; then
               rel="evidence-v1/${BASH_REMATCH[1]}/${BASH_REMATCH[2]}/${BASH_REMATCH[3]}"
               files=(manifest.json manifest.sha256 signature.sig labnote-public-key.pem summary.json verification.md)
             elif [[ "$tag" =~ ^ledger-([0-9]{4})-([0-9]{2})-([0-9]{2})$ ]]; then
               rel="${BASH_REMATCH[1]}/${BASH_REMATCH[2]}/${BASH_REMATCH[3]}"
               files=(fingerprints.txt manifest.json verification.md)
+              if git cat-file -e "$tag:$rel/timestamps.json" 2>/dev/null; then
+                files+=(timestamps.json timestamp-verification.md)
+                notes=timestamp-verification.md
+              fi
             else
               echo "Unsupported tag" >&2
               exit 1
@@ -66,6 +71,6 @@ jobs:
                 fi
               done
             else
-              gh release create "$tag" "${assets[@]}" --title "Labnote $tag" --notes-file "$work/verification.md" --latest=false
+              gh release create "$tag" "${assets[@]}" --title "Labnote $tag" --notes-file "$work/$notes" --latest=false
             fi
           done

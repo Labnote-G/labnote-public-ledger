@@ -1,2 +1,5 @@
 
 evidence-v1/** -text
+
+**/timestamps.json -text
+**/timestamp-verification.md -text
