@@ -1,0 +1,82 @@
+{
+  "schema_version": 2,
+  "fingerprints_format": "fingerprint-timestamp-v2",
+  "product": "Labnote",
+  "ledger_date": "2026-10-08",
+  "timezone": "Asia/Shanghai",
+  "generated_at": "2026-10-08T16:00:00Z",
+  "publication_scope": "research_log_latest_fingerprints",
+  "privacy_note": "No log titles, bodies, authors, project names, or attachment names are published.",
+  "record_count": 11,
+  "fingerprints_file": "fingerprints.txt",
+  "fingerprints_sha256": "1ed9a4110241809cd98ea9d6af9fd867503f2c434c635362f9c8f284030915d3",
+  "previous_manifest_sha256": "8f09139838639015190523c0ca78430eb6f6f633fdf368cef8de40589bfaa653",
+  "records": [
+    {
+      "sequence": 1,
+      "fingerprint": "08b941309888c5326a1e8ef4929a4eeb8dcc88d827ecc4b128a93f66cdc2dccf",
+      "fingerprinted_at": "2026-10-08T08:55:51Z",
+      "timestamp_status": "PENDING"
+    },
+    {
+      "sequence": 2,
+      "fingerprint": "0daa8580c4e30bb44fa0972d670fb96a00ee407dc894937bdb31e5c91ac857c7",
+      "fingerprinted_at": "2026-10-08T08:55:48Z",
+      "timestamp_status": "PENDING"
+    },
+    {
+      "sequence": 3,
+      "fingerprint": "586f48599684579f69eed619c1768c9633649a45120f539b747bcdc3cc07cce0",
+      "fingerprinted_at": "2026-10-08T08:55:49Z",
+      "timestamp_status": "PENDING"
+    },
+    {
+      "sequence": 4,
+      "fingerprint": "685e7fa5f4a0bbec8fdcbaa06a7912504c4a1ba4b68ba359d014fe47c8e9c172",
+      "fingerprinted_at": "2026-10-08T08:55:50Z",
+      "timestamp_status": "PENDING"
+    },
+    {
+      "sequence": 5,
+      "fingerprint": "8bf37e28acb451a82671a9ce6a9013bdc35052883a850964888e9c8beaa067a4",
+      "fingerprinted_at": "2026-10-08T08:55:51Z",
+      "timestamp_status": "PENDING"
+    },
+    {
+      "sequence": 6,
+      "fingerprint": "9b2806de47320bf0aa6328abdab3fe655cf413d935965d5be32870b61a15387c",
+      "fingerprinted_at": "2026-10-08T08:55:50Z",
+      "timestamp_status": "PENDING"
+    },
+    {
+      "sequence": 7,
+      "fingerprint": "c87fab940d238de6aeb7a777056ce693cedb68203ebda01f5dabb3b45f79ad92",
+      "fingerprinted_at": "2026-10-08T08:55:49Z",
+      "timestamp_status": "PENDING"
+    },
+    {
+      "sequence": 8,
+      "fingerprint": "dd921267924e1ee10e69be85e621843408188dc25edcea7a028242359e1bbf54",
+      "fingerprinted_at": "2026-10-08T08:55:50Z",
+      "timestamp_status": "PENDING"
+    },
+    {
+      "sequence": 9,
+      "fingerprint": "dfd71348751730f1a2bd2951a38f23b90ddad582adc2effba7229cc670fbe3ae",
+      "fingerprinted_at": "2026-10-08T08:55:49Z",
+      "timestamp_status": "PENDING"
+    },
+    {
+      "sequence": 10,
+      "fingerprint": "ee0074b73087868c43f1865e12744a43b11c352b56e4da2d731671619952634e",
+      "fingerprinted_at": "2026-10-08T08:55:50Z",
+      "timestamp_status": "PENDING"
+    },
+    {
+      "sequence": 11,
+      "fingerprint": "fcd8832f39517dda7b6658e6fd060f8006d6fcdd6036e9901ba22242a9cefd10",
+      "fingerprinted_at": "2026-10-08T08:55:50Z",
+      "timestamp_status": "PENDING"
+    }
+  ]
+}

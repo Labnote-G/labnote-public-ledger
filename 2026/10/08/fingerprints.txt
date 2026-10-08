@@ -1,0 +1,20 @@
+# Labnote Daily Fingerprint Publication
+# ledger_date: 2026-10-08
+# timezone: Asia/Shanghai
+# algorithm: SHA-256
+# format: fingerprint-timestamp-v2
+# columns: SHA-256指纹 | TSA时间（北京时间 UTC+08:00） | TSA服务 | 时间戳序列号
+# 时间戳证明相应版本证据最晚在该时间已存在，不是精确创建时间；待签发不代表已有时间证明。
+# privacy: this file intentionally omits titles, bodies, authors, project names, and attachment names.
+
+08b941309888c5326a1e8ef4929a4eeb8dcc88d827ecc4b128a93f66cdc2dccf | 待签发 | — | —
+0daa8580c4e30bb44fa0972d670fb96a00ee407dc894937bdb31e5c91ac857c7 | 待签发 | — | —
+586f48599684579f69eed619c1768c9633649a45120f539b747bcdc3cc07cce0 | 待签发 | — | —
+685e7fa5f4a0bbec8fdcbaa06a7912504c4a1ba4b68ba359d014fe47c8e9c172 | 待签发 | — | —
+8bf37e28acb451a82671a9ce6a9013bdc35052883a850964888e9c8beaa067a4 | 待签发 | — | —
+9b2806de47320bf0aa6328abdab3fe655cf413d935965d5be32870b61a15387c | 待签发 | — | —
+c87fab940d238de6aeb7a777056ce693cedb68203ebda01f5dabb3b45f79ad92 | 待签发 | — | —
+dd921267924e1ee10e69be85e621843408188dc25edcea7a028242359e1bbf54 | 待签发 | — | —
+dfd71348751730f1a2bd2951a38f23b90ddad582adc2effba7229cc670fbe3ae | 待签发 | — | —
+ee0074b73087868c43f1865e12744a43b11c352b56e4da2d731671619952634e | 待签发 | — | —
+fcd8832f39517dda7b6658e6fd060f8006d6fcdd6036e9901ba22242a9cefd10 | 待签发 | — | —
