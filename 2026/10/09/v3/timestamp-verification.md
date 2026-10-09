@@ -14,3 +14,11 @@ ruby bin/labnote-verify-timestamps --index timestamps.json --trusted-labnote-key
 清单签名证明平台声明了“日志整体指纹与独立证据”的对应关系；清单自身时间戳证明此清单最晚在其签发时已经存在。
 单版本原始时间戳直接绑定的是私有快照的承诺。公开清单不披露快照，因此无法仅凭公开材料重新计算日志整体指纹或核实原始附件；需要授权取得对应私人存证包和原件进一步核验。不能把较晚生成的清单当作较早签发时已有同一公开对应关系的独立证明。
 所有验证均未包含证书撤销状态检查，不证明实验事实真实。旧版公开文件与已发布历史标签保持原样。
+
+## FreeTSA 在线验证入口
+
+[打开 FreeTSA 在线验证](https://www.freetsa.org/index_en.php#online)
+
+进入 **Online Signature → Verify**，分别上传同一份私人存证包中的 `timestamp.tsq` 和 `timestamp.tsr`，再点击 `verify`。出现 `Verification: OK` 表示请求与时间戳响应验证通过。`Serial number` 使用十六进制，可与指纹清单中的十六进制序列号对照。
+
+不要上传整个 ZIP 或日志正文；本账本的 `timestamps.json` 不能直接上传到该页面，应按文中的命令验证。在线验证这两个文件不等于完成原文及附件的整条证据链验证。

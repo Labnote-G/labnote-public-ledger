@@ -14,3 +14,11 @@
 公开材料不含日志正文、标题、作者或原始附件；完整原文绑定验证需授权取得私人存证包。验证不包含证书撤销状态检查。
 
 本版仅增加序列号十六进制显示列，两列表示同一个序列号；原始 TSA 材料与 v2 一致，没有重新签发时间戳。清单生成时间沿用 v2，本展示修订于 2026-10-10（北京时间）发布。
+
+## FreeTSA 在线验证入口
+
+[打开 FreeTSA 在线验证](https://www.freetsa.org/index_en.php#online)
+
+进入 **Online Signature → Verify**，分别上传同一份私人存证包中的 `timestamp.tsq` 和 `timestamp.tsr`，再点击 `verify`。出现 `Verification: OK` 表示请求与时间戳响应验证通过。`Serial number` 使用十六进制，可与指纹清单中的十六进制序列号对照。
+
+不要上传整个 ZIP 或日志正文；本账本的 `timestamps.json` 不能直接上传到该页面，应按文中的命令验证。在线验证这两个文件不等于完成原文及附件的整条证据链验证。
