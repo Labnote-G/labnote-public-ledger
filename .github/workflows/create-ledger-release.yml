@@ -58,6 +58,9 @@ jobs:
               echo "Unsupported tag" >&2
               exit 1
             fi
+            if git cat-file -e "$tag:$rel/timestamp-files.zip" 2>/dev/null; then
+              files+=(timestamp-files.zip)
+            fi
             work=$(mktemp -d)
             assets=()
             for file in "${files[@]}"; do
