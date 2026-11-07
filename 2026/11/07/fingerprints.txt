@@ -1,0 +1,18 @@
+# Labnote Daily Fingerprint Publication
+# ledger_date: 2026-11-07
+# timezone: Asia/Shanghai
+# algorithm: SHA-256
+# format: labnote-fingerprint-timestamp-v4
+# columns: Labnote序号 | SHA-256指纹 | TSA时间（北京时间 UTC+08:00） | TSA服务 | 序列号（十进制） | 序列号（十六进制）
+# 时间戳证明相应版本证据最晚在该时间已存在，不是精确创建时间；待签发不代表已有时间证明。
+# privacy: this file intentionally omits titles, bodies, authors, project names, and attachment names.
+
+labnote0002703 | 0112b5ca29b26cc99691a2d3facff544bc1d1bbe9b381572530771d2663326b6 | 2026-11-07 10:57:53 | FreeTSA | 164783776 | 0x09D266A0
+labnote0002710 | 1777286f6bfaae368e0ffb37226721c63a2042c64590cfe10ae7c6f20775648a | 2026-11-07 20:41:53 | FreeTSA | 164924033 | 0x09D48A81
+labnote0002706 | 2b12d96b0948518d15074cfe5973ba5d72eb828a10ef5106ba66f9e17adca9fc | 2026-11-07 19:19:47 | FreeTSA | 164902837 | 0x09D437B5
+labnote0002707 | 498bb83aea3d847dc1e4bfb3c7bc3a42dbfc68f27b1d279abd70144dde3a3dca | 2026-11-07 20:36:21 | FreeTSA | 164922684 | 0x09D4853C
+labnote0002702 | 95af97fc028e1e434b4f4a198197fc1576e068559f46380ace13c6a83455f4db | 2026-11-07 10:55:09 | FreeTSA | 164783209 | 0x09D26469
+labnote0002704 | ac1222ed3fa4949f736e8c804e335470b223b6d788b82492fe9a44e81204f94c | 2026-11-07 16:49:38 | FreeTSA | 164860045 | 0x09D3908D
+labnote0002708 | be7835969f9760635284ba21a2edb7522a973bc043b07e6e4640a2d2321b9314 | 2026-11-07 20:39:42 | FreeTSA | 164923469 | 0x09D4884D
+labnote0002709 | c868ce39b123de7a923b37579eec45c0faf43d687374811dcc1a6a3675c29218 | 2026-11-07 20:40:02 | FreeTSA | 164923535 | 0x09D4888F
+labnote0002705 | e1e3141caeac5730e980afde2ee23471a5989ba7d998df6aa73ed2c3fd13f3f4 | 2026-11-07 16:54:35 | FreeTSA | 164861077 | 0x09D39495
