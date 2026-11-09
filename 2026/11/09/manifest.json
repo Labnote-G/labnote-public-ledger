@@ -1,0 +1,56 @@
+{
+  "schema_version": 3,
+  "fingerprints_format": "labnote-fingerprint-timestamp-v4",
+  "product": "Labnote",
+  "ledger_date": "2026-11-09",
+  "timezone": "Asia/Shanghai",
+  "generated_at": "2026-11-09T16:00:00Z",
+  "publication_scope": "research_log_latest_fingerprints",
+  "privacy_note": "No log titles, bodies, authors, project names, or attachment names are published.",
+  "record_count": 4,
+  "fingerprints_file": "fingerprints.txt",
+  "fingerprints_sha256": "7a95baa12f5937f4755a415f20c2014b00205a6222167c36bd4fc355bdca59eb",
+  "previous_manifest_sha256": "4c286d8a1556117a2ffa73aaaa5ce5500e4bd69dfd88094f8fade9df4d7498e2",
+  "records": [
+    {
+      "sequence": 1,
+      "labnote_serial": "labnote0002712",
+      "fingerprint": "7426c3bd8217170dc4cad16a2e816cc44a68129ecaba3bc02717ab813dbe5e39",
+      "fingerprinted_at": "2026-11-09T07:52:26Z",
+      "timestamp_status": "VERIFIED",
+      "timestamp_time": "2026-11-09T07:52:41Z",
+      "tsa_provider": "https://freetsa.org/tsr",
+      "timestamp_serial": "165577301"
+    },
+    {
+      "sequence": 2,
+      "labnote_serial": "labnote0002714",
+      "fingerprint": "9e9ee8332f0a776d491d76875486bdc9978215c21544fe3c72f4e748fd1f8579",
+      "fingerprinted_at": "2026-11-09T13:03:06Z",
+      "timestamp_status": "VERIFIED",
+      "timestamp_time": "2026-11-09T13:03:17Z",
+      "tsa_provider": "https://freetsa.org/tsr",
+      "timestamp_serial": "165709889"
+    },
+    {
+      "sequence": 3,
+      "labnote_serial": "labnote0002713",
+      "fingerprint": "a865022c5de129abb156162f79b2863eb3425c31658cf1d2c4bd9b10e4b3705c",
+      "fingerprinted_at": "2026-11-09T11:57:27Z",
+      "timestamp_status": "VERIFIED",
+      "timestamp_time": "2026-11-09T11:57:37Z",
+      "tsa_provider": "https://freetsa.org/tsr",
+      "timestamp_serial": "165677407"
+    },
+    {
+      "sequence": 4,
+      "labnote_serial": "labnote0002711",
+      "fingerprint": "d5115248e43748c5219ff7b9f1a823a68b20e6ca7beedd764f76f3543eac2317",
+      "fingerprinted_at": "2026-11-09T07:08:27Z",
+      "timestamp_status": "VERIFIED",
+      "timestamp_time": "2026-11-09T07:08:41Z",
+      "tsa_provider": "https://freetsa.org/tsr",
+      "timestamp_serial": "165561914"
+    }
+  ]
+}
